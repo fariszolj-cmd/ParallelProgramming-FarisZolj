@@ -1,54 +1,18 @@
-
-#include <errno.h>
-#include <stdio.h>
 #include <stdlib.h>
 
-#define ARRAY_SIZE 10
 
-int main(int argc, char *argv[])
-{
-    if (argc != 2) {
-        fprintf(stderr, "Usage: %s <integer>\n", argv[0]);
-        return EXIT_FAILURE;
-    }
+int main(int argc, char *argv[]) {
+    int ipos = 0, ival = 0;
+    int *iarray = malloc(10*sizeof(int));
+    if (iarray == NULL) {return 1;}
+    if (argc == 2) ival = atoi(argv[1]);
 
-    char *endptr;
-    errno = 0;
-    long value = strtol(argv[1], &endptr, 10);
-
-    if (errno != 0 || endptr == argv[1] ||
-        *endptr != '\0' || value < 0 || value > 9) {
-        fprintf(stderr, "Error: enter an integer from 0 to 9.\n");
-        return EXIT_FAILURE;
-        }
-
-    int *iarray = malloc(ARRAY_SIZE * sizeof *iarray);
-
-    if (iarray == NULL) {
-        fprintf(stderr, "Error: memory allocation failed.\n");
-        return EXIT_FAILURE;
-    }
-
-    for (int i = 0; i < ARRAY_SIZE; i++) {
+    for (int i = 0; i<10; i++) {
         iarray[i] = i;
     }
-
-    int ipos = -1;
-    int ival = (int)value;
-
-    for (int i = 0; i < ARRAY_SIZE; i++) {
-        if (ival == iarray[i]) {
-            ipos = i;
-            break;
-        }
+    for (int i = 0; i<10; i++) {
+        if (ival == iarray[i]) ipos = i;
     }
-
-    if (ipos != -1) {
-        printf("Value %d found at index %d.\n", ival, ipos);
-    } else {
-        printf("Value not found.\n");
-    }
-
     free(iarray);
-    return EXIT_SUCCESS;
+    return 0;
 }
