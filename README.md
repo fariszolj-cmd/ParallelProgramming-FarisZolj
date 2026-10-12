@@ -1,6 +1,9 @@
-Sta je valgrind ispisao
-
-
+I approached this problem by firstly looking at it for solid 25 minutes
+noticed how the array loop went outside the bounds (max 9 went to 10 instead) 
+changed that and also added free() to release the allocated memory 
+then i compiled the program entered the commands for valgrind in the ubuntu terminal
+to check for errors, it didnt show any so i posted the Valgrind output down below.
+_____________________________________________
 Faris@DESKTOP-DD9C7RS:/mnt/d/valgrind-task$ make valgrind
 valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./program 5
 ==3196== Memcheck, a memory error detector
