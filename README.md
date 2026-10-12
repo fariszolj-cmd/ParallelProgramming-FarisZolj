@@ -1,5 +1,6 @@
 Valgrind task sta je pisalo u terminalu.
 
+
 Faris@DESKTOP-DD9C7RS:/mnt/d/valgrind-task$ make valgrind
 
 valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./program 5
