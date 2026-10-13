@@ -1,4 +1,4 @@
-##Problem-Solving Approach
+## Problem-Solving Approach
 
 I approached this problem by first spending around 25 minutes analyzing the code to understand what was causing the issue.
 
