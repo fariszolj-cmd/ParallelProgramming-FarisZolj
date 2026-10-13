@@ -1,8 +1,10 @@
-I approached this problem by firstly looking at it for solid 25 minutes
-noticed how the array loop went outside the bounds (max 9 went to 10 instead) 
-changed that and also added free() to release the allocated memory 
-then i compiled the program entered the commands for valgrind in the ubuntu terminal
-to check for errors, it didnt show any so i posted the Valgrind output down below.
+##Problem-Solving Approach
+
+I approached this problem by first spending around 25 minutes analyzing the code to understand what was causing the issue.
+
+I noticed that the array loop was going out of bounds, accessing index 10 instead of stopping at the maximum valid index, 9. I corrected the loop condition and added free() to release the dynamically allocated memory and prevent memory leaks.
+
+After making these changes, I compiled the program and ran it through Valgrind in the Ubuntu terminal to check for memory-related errors. Valgrind did not report any errors, so I have included the output below as verification.
 _____________________________________________
 Faris@DESKTOP-DD9C7RS:/mnt/d/valgrind-task$ make valgrind
 valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./program 5
