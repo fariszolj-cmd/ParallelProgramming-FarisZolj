@@ -6,6 +6,7 @@ I noticed that the array loop was going out of bounds, accessing index 10 instea
 
 After making these changes, I compiled the program and ran it through Valgrind in the Ubuntu terminal to check for memory-related errors. Valgrind did not report any errors, so I have included the output below as verification.
 _____________________________________________
+## Terminal Result
 Faris@DESKTOP-DD9C7RS:/mnt/d/valgrind-task$ make valgrind
 valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./program 5
 ==3196== Memcheck, a memory error detector
