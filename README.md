@@ -18,7 +18,7 @@ Ran the Roofline Toolkit to generate a roofline graph.
 Built CloverLeaf and profiled it with Callgrind, then looked at the result in KCachegrind.
 
 ## likwid
-Installed likwid, but the measurements showed zeros because WSL does not let it read the hardware counters.
+Installed likwid, but the measurements showed zeros because of some error
 
 ## Results
 Measured FP64 performance was 119.3 GFLOP/s, and DRAM bandwidth was 17.5 GB/s.
