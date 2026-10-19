@@ -1,0 +1,79 @@
+
+Reading configuration from 'Config/assignment-2'...
+  Using existing results directory, Results.assignment-2...
+
+*** WARNING ***
+**
+**  Making new run directory, 'Results.assignment-2/Run.002',
+**    because the current connfiguration file, 'Config/assignment-2' 
+**    doesn't match the configuration files, 'config.ert', under:
+**
+**      Results.assignment-2/Run.001
+**
+*** WARNING ***
+    mkdir Results.assignment-2/Run.002 
+    cp Config/assignment-2 Results.assignment-2/Run.002/config.ert 
+
+FLOP count 1...
+    mkdir Results.assignment-2/Run.002/FLOPS.001 
+
+  Building ERT core code...
+    g++ -O3 -funroll-loops -ftree-vectorize -fopenmp -I./Kernels -DERT_FLOP=1 -DERT_ALIGN=32 -DERT_MEMORY_MAX=268435456 -DERT_WORKING_SET_MIN=1 -DERT_TRIALS_MIN=1 -DERT_WSS_MULT=1.1 -DERT_OPENMP -fopenmp -DERT_FP64 -c ./Drivers/driver1.cxx -o Results.assignment-2/Run.002/FLOPS.001/driver1.o 
+    g++ -O3 -funroll-loops -ftree-vectorize -fopenmp -I./Kernels -DERT_FLOP=1 -DERT_ALIGN=32 -DERT_MEMORY_MAX=268435456 -DERT_WORKING_SET_MIN=1 -DERT_TRIALS_MIN=1 -DERT_WSS_MULT=1.1 -DERT_OPENMP -fopenmp -DERT_FP64 -c ./Kernels/kernel1.cxx -o Results.assignment-2/Run.002/FLOPS.001/kernel1.o 
+    g++ -O3 -fopenmp -fopenmp Results.assignment-2/Run.002/FLOPS.001/driver1.o Results.assignment-2/Run.002/FLOPS.001/kernel1.o -o Results.assignment-2/Run.002/FLOPS.001/driver1.kernel1 
+
+  Running ERT core code...
+    mkdir Results.assignment-2/Run.002/FLOPS.001/OpenMP.0001 
+    OpenMP 1
+    (export OMP_NUM_THREADS=1; export OMP_PLACES=threads; export OMP_PROC_BIND=spread; ./Results.assignment-2/Run.002/FLOPS.001/driver1.kernel1 ) > Results.assignment-2/Run.002/FLOPS.001/OpenMP.0001/try.001 2>&1 
+    (export OMP_NUM_THREADS=1; export OMP_PLACES=threads; export OMP_PROC_BIND=spread; ./Results.assignment-2/Run.002/FLOPS.001/driver1.kernel1 ) > Results.assignment-2/Run.002/FLOPS.001/OpenMP.0001/try.002 2>&1 
+    (export OMP_NUM_THREADS=1; export OMP_PLACES=threads; export OMP_PROC_BIND=spread; ./Results.assignment-2/Run.002/FLOPS.001/driver1.kernel1 ) > Results.assignment-2/Run.002/FLOPS.001/OpenMP.0001/try.003 2>&1 
+    (export OMP_NUM_THREADS=1; export OMP_PLACES=threads; export OMP_PROC_BIND=spread; ./Results.assignment-2/Run.002/FLOPS.001/driver1.kernel1 ) > Results.assignment-2/Run.002/FLOPS.001/OpenMP.0001/try.004 2>&1 
+    (export OMP_NUM_THREADS=1; export OMP_PLACES=threads; export OMP_PROC_BIND=spread; ./Results.assignment-2/Run.002/FLOPS.001/driver1.kernel1 ) > Results.assignment-2/Run.002/FLOPS.001/OpenMP.0001/try.005 2>&1 
+    touch Results.assignment-2/Run.002/FLOPS.001/OpenMP.0001/run.done 
+
+    mkdir Results.assignment-2/Run.002/FLOPS.001/OpenMP.0002 
+    OpenMP 2
+    (export OMP_NUM_THREADS=2; export OMP_PLACES=threads; export OMP_PROC_BIND=spread; ./Results.assignment-2/Run.002/FLOPS.001/driver1.kernel1 ) > Results.assignment-2/Run.002/FLOPS.001/OpenMP.0002/try.001 2>&1 
+    (export OMP_NUM_THREADS=2; export OMP_PLACES=threads; export OMP_PROC_BIND=spread; ./Results.assignment-2/Run.002/FLOPS.001/driver1.kernel1 ) > Results.assignment-2/Run.002/FLOPS.001/OpenMP.0002/try.002 2>&1 
+    (export OMP_NUM_THREADS=2; export OMP_PLACES=threads; export OMP_PROC_BIND=spread; ./Results.assignment-2/Run.002/FLOPS.001/driver1.kernel1 ) > Results.assignment-2/Run.002/FLOPS.001/OpenMP.0002/try.003 2>&1 
+    (export OMP_NUM_THREADS=2; export OMP_PLACES=threads; export OMP_PROC_BIND=spread; ./Results.assignment-2/Run.002/FLOPS.001/driver1.kernel1 ) > Results.assignment-2/Run.002/FLOPS.001/OpenMP.0002/try.004 2>&1 
+    (export OMP_NUM_THREADS=2; export OMP_PLACES=threads; export OMP_PROC_BIND=spread; ./Results.assignment-2/Run.002/FLOPS.001/driver1.kernel1 ) > Results.assignment-2/Run.002/FLOPS.001/OpenMP.0002/try.005 2>&1 
+    touch Results.assignment-2/Run.002/FLOPS.001/OpenMP.0002/run.done 
+
+    mkdir Results.assignment-2/Run.002/FLOPS.001/OpenMP.0004 
+    OpenMP 4
+    (export OMP_NUM_THREADS=4; export OMP_PLACES=threads; export OMP_PROC_BIND=spread; ./Results.assignment-2/Run.002/FLOPS.001/driver1.kernel1 ) > Results.assignment-2/Run.002/FLOPS.001/OpenMP.0004/try.001 2>&1 
+    (export OMP_NUM_THREADS=4; export OMP_PLACES=threads; export OMP_PROC_BIND=spread; ./Results.assignment-2/Run.002/FLOPS.001/driver1.kernel1 ) > Results.assignment-2/Run.002/FLOPS.001/OpenMP.0004/try.002 2>&1 
+    (export OMP_NUM_THREADS=4; export OMP_PLACES=threads; export OMP_PROC_BIND=spread; ./Results.assignment-2/Run.002/FLOPS.001/driver1.kernel1 ) > Results.assignment-2/Run.002/FLOPS.001/OpenMP.0004/try.003 2>&1 
+    (export OMP_NUM_THREADS=4; export OMP_PLACES=threads; export OMP_PROC_BIND=spread; ./Results.assignment-2/Run.002/FLOPS.001/driver1.kernel1 ) > Results.assignment-2/Run.002/FLOPS.001/OpenMP.0004/try.004 2>&1 
+    (export OMP_NUM_THREADS=4; export OMP_PLACES=threads; export OMP_PROC_BIND=spread; ./Results.assignment-2/Run.002/FLOPS.001/driver1.kernel1 ) > Results.assignment-2/Run.002/FLOPS.001/OpenMP.0004/try.005 2>&1 
+    touch Results.assignment-2/Run.002/FLOPS.001/OpenMP.0004/run.done 
+
+  Processing results...
+    Results.assignment-2/Run.002/FLOPS.001/OpenMP.0001
+    cat Results.assignment-2/Run.002/FLOPS.001/OpenMP.0001/try.* | ./Scripts/preprocess.py > Results.assignment-2/Run.002/FLOPS.001/OpenMP.0001/pre
+    ./Scripts/maximum.py < Results.assignment-2/Run.002/FLOPS.001/OpenMP.0001/pre > Results.assignment-2/Run.002/FLOPS.001/OpenMP.0001/max
+    ./Scripts/summary.py < Results.assignment-2/Run.002/FLOPS.001/OpenMP.0001/max > Results.assignment-2/Run.002/FLOPS.001/OpenMP.0001/sum
+
+    Results.assignment-2/Run.002/FLOPS.001/OpenMP.0002
+    cat Results.assignment-2/Run.002/FLOPS.001/OpenMP.0002/try.* | ./Scripts/preprocess.py > Results.assignment-2/Run.002/FLOPS.001/OpenMP.0002/pre
+    ./Scripts/maximum.py < Results.assignment-2/Run.002/FLOPS.001/OpenMP.0002/pre > Results.assignment-2/Run.002/FLOPS.001/OpenMP.0002/max
+    ./Scripts/summary.py < Results.assignment-2/Run.002/FLOPS.001/OpenMP.0002/max > Results.assignment-2/Run.002/FLOPS.001/OpenMP.0002/sum
+
+    Results.assignment-2/Run.002/FLOPS.001/OpenMP.0004
+    cat Results.assignment-2/Run.002/FLOPS.001/OpenMP.0004/try.* | ./Scripts/preprocess.py > Results.assignment-2/Run.002/FLOPS.001/OpenMP.0004/pre
+    ./Scripts/maximum.py < Results.assignment-2/Run.002/FLOPS.001/OpenMP.0004/pre > Results.assignment-2/Run.002/FLOPS.001/OpenMP.0004/max
+    ./Scripts/summary.py < Results.assignment-2/Run.002/FLOPS.001/OpenMP.0004/max > Results.assignment-2/Run.002/FLOPS.001/OpenMP.0004/sum
+
+    echo 'load "Results.assignment-2/Run.002/FLOPS.001/OpenMP.0001/graph1.gnu"' | gnuplot
+
+gnuplot> set clabel '%8.3g'
+             ^
+         "Results.assignment-2/Run.002/FLOPS.001/OpenMP.0001/graph1.gnu" line 60: unrecognized option - see 'help set'.
+
+  Failure...
+Unable to produce a 'graph1' for Results.assignment-2/Run.002/FLOPS.001/OpenMP.0001
+
+--- Making ERT individual graphs failed ---
+
