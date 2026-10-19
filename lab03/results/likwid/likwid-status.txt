@@ -1,9 +1,0 @@
-=== LIKWID version ===
-likwid-perfctr -- Version 5.4.1 (commit: 0123456789)
-
-=== Hardware counter test ===
---------------------------------------------------------------------------------
-CPU name:	AMD Ryzen 5 3400G with Radeon Vega Graphics    
-CPU type:	AMD K17 (Zen+) architecture
-CPU clock:	3.69 GHz
-Cannot get access to MSRs. Please check permissions to the MSRs
