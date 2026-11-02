@@ -1,0 +1,548 @@
+--- max num openmp threads: 8
+--- num openmp threads in parallel region: 8
+SETTINGS INFO -- ncells 16 log 4 ndigits 3 ndigitsld 0 nbits 8 nbitsld 2
+Initializing mesh with Leblanc problem, high values first
+  accurate sum 0.8000000008      sum 0.8000000008      diff          0 relative diff          0 runtime 0.000000   Serial sum
+  accurate sum 0.8000000008      sum 0.8000000008000001 diff   1.11e-16 relative diff  1.388e-16 runtime 0.000000   Serial sum (OpenMP SIMD pragma)
+  accurate sum 0.8000000008      sum 0.8000000008      diff          0 relative diff          0 runtime 0.000002   Serial sum with digit truncation
+  accurate sum 0.8000000007999972 sum 0.8000000007999972 diff          0 relative diff          0 runtime 0.000001   Serial sum with bit truncation
+  accurate sum 0.8000000008      sum 0.8000000008      diff -1.626e-19 relative diff -2.033e-19 runtime 0.000000   Serial sum with long double accumulator
+  accurate sum 0.8000000008      sum 0.8000000008      diff          0 relative diff          0 runtime 0.000000   Serial sum with long double accumulator with ndigit truncation
+  accurate sum 0.8000000007999999 sum 0.8000000007999999 diff          0 relative diff          0 runtime 0.000000   Serial sum with long double accumulator with bit truncation
+  accurate sum 0.8000000008      sum 0.8000000008      diff          0 relative diff          0 runtime 0.000000   Serial sum with double double kahan sum accumulator
+  accurate sum 0.8000000008      sum 0.8000000008      diff          0 relative diff          0 runtime 0.000000   Intel Vectorized sum with double double kahan sum accumulator
+  accurate sum 0.8000000008      sum 0.8000000008      diff          0 relative diff          0 runtime 0.000000   GCC Extensions Vectorized sum with double double kahan sum accumulator
+  accurate sum 0.8000000008      sum 0.8000000007999999 diff  -1.11e-16 relative diff -1.388e-16 runtime 0.000000   8 wide GCC vector extensions Kahan sum
+  accurate sum 0.8000000008      sum 0.8000000008      diff          0 relative diff          0 runtime 0.000000   Serial sum with double double knuth sum accumulator
+  accurate sum 0.8000000008      sum 0.8000000008      diff          0 relative diff          0 runtime 0.000000   Intel Vectorized sum with double double knuth sum accumulator
+  accurate sum 0.8000000008      sum 0.8000000008      diff          0 relative diff          0 runtime 0.000000   GCC Extensions Vectorized sum with double double knuth sum accumulator
+  accurate sum 0.8000000008      sum 0.8000000008      diff          0 relative diff          0 runtime 0.000001   Pair-wise sum
+
+  accurate sum 0.8000000008             sum 0.800000000800000044408  diff 4.4408921014152e-17  relative diff 5.5511151212179e-17  runtime 0.000001   Serial sum with quad double accumulator
+  accurate sum 0.8000000008             sum 0.8000000008             diff -2.8888949165809e-34 relative diff -3.6111186421149e-34 runtime 0.000001   Serial sum with quad double accumulator and quad terms
+
+  accurate sum 0.8000000008      sum 0.8000000007999999 diff  -1.11e-16 relative diff -1.388e-16 runtime 0.007981   OpenMP sum
+  accurate sum 0.8000000007999972 sum 0.8000000007999972 diff          0 relative diff          0 runtime 0.007923   OpenMP sum with bit truncation
+  accurate sum 0.8000000008      sum 0.8000000008000001 diff   1.11e-16 relative diff  1.388e-16 runtime 0.015885   OpenMP sum with double double kahan sum accumulator
+  accurate sum 0.8000000007999999 sum 0.8000000007999999 diff          0 relative diff          0 runtime 0.015991   OpenMP sum with double double kahan sum accumulator with bit truncation
+
+SETTINGS INFO -- ncells 32 log 5 ndigits 4 ndigitsld 1 nbits 9 nbitsld 3
+Initializing mesh with Leblanc problem, high values first
+  accurate sum 1.6000000016      sum 1.6000000016      diff  4.441e-16 relative diff  2.776e-16 runtime 0.000000   Serial sum
+  accurate sum 1.6000000016      sum 1.6000000016      diff          0 relative diff          0 runtime 0.000000   Serial sum (OpenMP SIMD pragma)
+  accurate sum 1.6000000016      sum 1.6000000016      diff          0 relative diff          0 runtime 0.000001   Serial sum with digit truncation
+  accurate sum 1.600000001599938 sum 1.600000001599938 diff          0 relative diff          0 runtime 0.000000   Serial sum with bit truncation
+  accurate sum 1.6000000016      sum 1.6000000016      diff  5.421e-19 relative diff  3.388e-19 runtime 0.000000   Serial sum with long double accumulator
+  accurate sum 1.6000000016      sum 1.6000000016      diff          0 relative diff          0 runtime 0.000001   Serial sum with long double accumulator with ndigit truncation
+  accurate sum 1.6000000016      sum 1.6000000016      diff          0 relative diff          0 runtime 0.000000   Serial sum with long double accumulator with bit truncation
+  accurate sum 1.6000000016      sum 1.6000000016      diff          0 relative diff          0 runtime 0.000000   Serial sum with double double kahan sum accumulator
+  accurate sum 1.6000000016      sum 1.6000000016      diff          0 relative diff          0 runtime 0.000000   Intel Vectorized sum with double double kahan sum accumulator
+  accurate sum 1.6000000016      sum 1.6000000016      diff          0 relative diff          0 runtime 0.000000   GCC Extensions Vectorized sum with double double kahan sum accumulator
+  accurate sum 1.6000000016      sum 1.6000000016      diff  -2.22e-16 relative diff -1.388e-16 runtime 0.000000   8 wide GCC vector extensions Kahan sum
+  accurate sum 1.6000000016      sum 1.6000000016      diff          0 relative diff          0 runtime 0.000000   Serial sum with double double knuth sum accumulator
+  accurate sum 1.6000000016      sum 1.6000000016      diff          0 relative diff          0 runtime 0.000000   Intel Vectorized sum with double double knuth sum accumulator
+  accurate sum 1.6000000016      sum 1.6000000016      diff          0 relative diff          0 runtime 0.000000   GCC Extensions Vectorized sum with double double knuth sum accumulator
+  accurate sum 1.6000000016      sum 1.6000000016      diff          0 relative diff          0 runtime 0.000000   Pair-wise sum
+
+  accurate sum 1.6000000016             sum 1.600000001600000088817  diff 8.8817842028304e-17  relative diff 5.5511151212179e-17  runtime 0.000002   Serial sum with quad double accumulator
+  accurate sum 1.6000000016             sum 1.6000000016             diff 1.3481509610711e-33  relative diff 8.4259434982682e-34  runtime 0.000001   Serial sum with quad double accumulator and quad terms
+
+  accurate sum 1.6000000016      sum 1.6000000016      diff   2.22e-16 relative diff  1.388e-16 runtime 0.008002   OpenMP sum
+  accurate sum 1.600000001599994 sum 1.600000001599994 diff          0 relative diff          0 runtime 0.007991   OpenMP sum with bit truncation
+  accurate sum 1.6000000016      sum 1.6000000016      diff   2.22e-16 relative diff  1.388e-16 runtime 0.008034   OpenMP sum with double double kahan sum accumulator
+  accurate sum 1.6000000016      sum 1.6000000016      diff          0 relative diff          0 runtime 0.000004   OpenMP sum with double double kahan sum accumulator with bit truncation
+
+SETTINGS INFO -- ncells 64 log 6 ndigits 4 ndigitsld 1 nbits 9 nbitsld 3
+Initializing mesh with Leblanc problem, high values first
+  accurate sum 3.2000000032      sum 3.200000003200002 diff  1.776e-15 relative diff  5.551e-16 runtime 0.000000   Serial sum
+  accurate sum 3.2000000032      sum 3.200000003200001 diff  8.882e-16 relative diff  2.776e-16 runtime 0.000000   Serial sum (OpenMP SIMD pragma)
+  accurate sum 3.2000000032      sum 3.2000000032      diff          0 relative diff          0 runtime 0.000001   Serial sum with digit truncation
+  accurate sum 3.200000003199875 sum 3.200000003199875 diff          0 relative diff          0 runtime 0.000001   Serial sum with bit truncation
+  accurate sum 3.2000000032      sum 3.2000000032      diff  1.084e-18 relative diff  3.388e-19 runtime 0.000000   Serial sum with long double accumulator
+  accurate sum 3.2000000032      sum 3.2000000032      diff          0 relative diff          0 runtime 0.000000   Serial sum with long double accumulator with ndigit truncation
+  accurate sum 3.2000000032      sum 3.2000000032      diff          0 relative diff          0 runtime 0.000000   Serial sum with long double accumulator with bit truncation
+  accurate sum 3.2000000032      sum 3.2000000032      diff          0 relative diff          0 runtime 0.000000   Serial sum with double double kahan sum accumulator
+  accurate sum 3.2000000032      sum 3.2000000032      diff          0 relative diff          0 runtime 0.000000   Intel Vectorized sum with double double kahan sum accumulator
+  accurate sum 3.2000000032      sum 3.2000000032      diff          0 relative diff          0 runtime 0.000000   GCC Extensions Vectorized sum with double double kahan sum accumulator
+  accurate sum 3.2000000032      sum 3.2000000032      diff -4.441e-16 relative diff -1.388e-16 runtime 0.000000   8 wide GCC vector extensions Kahan sum
+  accurate sum 3.2000000032      sum 3.2000000032      diff          0 relative diff          0 runtime 0.000000   Serial sum with double double knuth sum accumulator
+  accurate sum 3.2000000032      sum 3.2000000032      diff          0 relative diff          0 runtime 0.000000   Intel Vectorized sum with double double knuth sum accumulator
+  accurate sum 3.2000000032      sum 3.2000000032      diff          0 relative diff          0 runtime 0.000000   GCC Extensions Vectorized sum with double double knuth sum accumulator
+  accurate sum 3.2000000032      sum 3.2000000032      diff          0 relative diff          0 runtime 0.000003   Pair-wise sum
+
+  accurate sum 3.2000000032             sum 3.200000003200000177635  diff 1.7763568405661e-16  relative diff 5.5511151212179e-17  runtime 0.000002   Serial sum with quad double accumulator
+  accurate sum 3.2000000032             sum 3.2000000032             diff 3.466673899897e-33   relative diff 1.0833355926345e-33  runtime 0.000001   Serial sum with quad double accumulator and quad terms
+
+  accurate sum 3.2000000032      sum 3.2000000032      diff -4.441e-16 relative diff -1.388e-16 runtime 0.000002   OpenMP sum
+  accurate sum 3.200000003199989 sum 3.200000003199989 diff          0 relative diff          0 runtime 0.000002   OpenMP sum with bit truncation
+  accurate sum 3.2000000032      sum 3.2000000032      diff  4.441e-16 relative diff  1.388e-16 runtime 0.000002   OpenMP sum with double double kahan sum accumulator
+  accurate sum 3.2000000032      sum 3.2000000032      diff          0 relative diff          0 runtime 0.000003   OpenMP sum with double double kahan sum accumulator with bit truncation
+
+SETTINGS INFO -- ncells 128 log 7 ndigits 4 ndigitsld 1 nbits 11 nbitsld 4
+Initializing mesh with Leblanc problem, high values first
+  accurate sum 6.4000000064      sum 6.400000006399994 diff -6.217e-15 relative diff -9.714e-16 runtime 0.000000   Serial sum
+  accurate sum 6.4000000064      sum 6.400000006400004 diff  3.553e-15 relative diff  5.551e-16 runtime 0.000000   Serial sum (OpenMP SIMD pragma)
+  accurate sum 6.4000000064      sum 6.4000000064      diff          0 relative diff          0 runtime 0.000000   Serial sum with digit truncation
+  accurate sum 6.400000006398841 sum 6.400000006398841 diff          0 relative diff          0 runtime 0.000000   Serial sum with bit truncation
+  accurate sum 6.4000000064      sum 6.4000000064      diff  2.168e-18 relative diff  3.388e-19 runtime 0.000000   Serial sum with long double accumulator
+  accurate sum 6.4000000064      sum 6.4000000064      diff          0 relative diff          0 runtime 0.000000   Serial sum with long double accumulator with ndigit truncation
+  accurate sum 6.400000006399992 sum 6.400000006399992 diff          0 relative diff          0 runtime 0.000000   Serial sum with long double accumulator with bit truncation
+  accurate sum 6.4000000064      sum 6.4000000064      diff          0 relative diff          0 runtime 0.000000   Serial sum with double double kahan sum accumulator
+  accurate sum 6.4000000064      sum 6.4000000064      diff          0 relative diff          0 runtime 0.000000   Intel Vectorized sum with double double kahan sum accumulator
+  accurate sum 6.4000000064      sum 6.4000000064      diff          0 relative diff          0 runtime 0.000000   GCC Extensions Vectorized sum with double double kahan sum accumulator
+  accurate sum 6.4000000064      sum 6.400000006399999 diff -8.882e-16 relative diff -1.388e-16 runtime 0.000000   8 wide GCC vector extensions Kahan sum
+  accurate sum 6.4000000064      sum 6.4000000064      diff          0 relative diff          0 runtime 0.000001   Serial sum with double double knuth sum accumulator
+  accurate sum 6.4000000064      sum 6.4000000064      diff          0 relative diff          0 runtime 0.000000   Intel Vectorized sum with double double knuth sum accumulator
+  accurate sum 6.4000000064      sum 6.4000000064      diff          0 relative diff          0 runtime 0.000000   GCC Extensions Vectorized sum with double double knuth sum accumulator
+  accurate sum 6.4000000064      sum 6.4000000064      diff          0 relative diff          0 runtime 0.000001   Pair-wise sum
+
+  accurate sum 6.4000000064             sum 6.400000006400000355271  diff 3.5527136811322e-16  relative diff 5.5511151212179e-17  runtime 0.000004   Serial sum with quad double accumulator
+  accurate sum 6.4000000064             sum 6.4000000064             diff -2.6192647243666e-32 relative diff -4.0926011277303e-33 runtime 0.000002   Serial sum with quad double accumulator and quad terms
+
+  accurate sum 6.4000000064      sum 6.400000006400002 diff  1.776e-15 relative diff  2.776e-16 runtime 0.000016   OpenMP sum
+  accurate sum 6.400000006399978 sum 6.400000006399978 diff          0 relative diff          0 runtime 0.000004   OpenMP sum with bit truncation
+  accurate sum 6.4000000064      sum 6.400000006400001 diff  8.882e-16 relative diff  1.388e-16 runtime 0.000013   OpenMP sum with double double kahan sum accumulator
+  accurate sum 6.400000006399999 sum 6.400000006399999 diff          0 relative diff          0 runtime 0.000003   OpenMP sum with double double kahan sum accumulator with bit truncation
+
+SETTINGS INFO -- ncells 256 log 8 ndigits 4 ndigitsld 1 nbits 12 nbitsld 4
+Initializing mesh with Leblanc problem, high values first
+  accurate sum 12.8000000128     sum 12.80000001279997 diff -2.842e-14 relative diff  -2.22e-15 runtime 0.000000   Serial sum
+  accurate sum 12.8000000128     sum 12.80000001279999 diff -1.243e-14 relative diff -9.714e-16 runtime 0.000000   Serial sum (OpenMP SIMD pragma)
+  accurate sum 12.8000000128     sum 12.8000000128     diff          0 relative diff          0 runtime 0.000000   Serial sum with digit truncation
+  accurate sum 12.80000001279404 sum 12.80000001279404 diff          0 relative diff          0 runtime 0.000000   Serial sum with bit truncation
+  accurate sum 12.8000000128     sum 12.8000000128     diff -5.117e-17 relative diff -3.998e-18 runtime 0.000000   Serial sum with long double accumulator
+  accurate sum 12.8000000128     sum 12.8000000128     diff          0 relative diff          0 runtime 0.000001   Serial sum with long double accumulator with ndigit truncation
+  accurate sum 12.80000001279998 sum 12.80000001279998 diff          0 relative diff          0 runtime 0.000001   Serial sum with long double accumulator with bit truncation
+  accurate sum 12.8000000128     sum 12.8000000128     diff          0 relative diff          0 runtime 0.000001   Serial sum with double double kahan sum accumulator
+  accurate sum 12.8000000128     sum 12.8000000128     diff          0 relative diff          0 runtime 0.000000   Intel Vectorized sum with double double kahan sum accumulator
+  accurate sum 12.8000000128     sum 12.8000000128     diff          0 relative diff          0 runtime 0.000000   GCC Extensions Vectorized sum with double double kahan sum accumulator
+  accurate sum 12.8000000128     sum 12.8000000128     diff -1.776e-15 relative diff -1.388e-16 runtime 0.000000   8 wide GCC vector extensions Kahan sum
+  accurate sum 12.8000000128     sum 12.8000000128     diff          0 relative diff          0 runtime 0.000001   Serial sum with double double knuth sum accumulator
+  accurate sum 12.8000000128     sum 12.8000000128     diff          0 relative diff          0 runtime 0.000001   Intel Vectorized sum with double double knuth sum accumulator
+  accurate sum 12.8000000128     sum 12.8000000128     diff          0 relative diff          0 runtime 0.000000   GCC Extensions Vectorized sum with double double knuth sum accumulator
+  accurate sum 12.8000000128     sum 12.8000000128     diff          0 relative diff          0 runtime 0.000001   Pair-wise sum
+
+  accurate sum 12.8000000128            sum 12.80000001280000071054  diff 7.1054273622643e-16  relative diff 5.5511151212179e-17  runtime 0.000007   Serial sum with quad double accumulator
+  accurate sum 12.8000000128            sum 12.8000000128            diff -6.6251990086921e-32 relative diff -5.1759367203648e-33 runtime 0.000005   Serial sum with quad double accumulator and quad terms
+
+  accurate sum 12.8000000128     sum 12.80000001280001 diff  5.329e-15 relative diff  4.163e-16 runtime 0.000086   OpenMP sum
+  accurate sum 12.8000000127995  sum 12.8000000127995  diff          0 relative diff          0 runtime 0.000140   OpenMP sum with bit truncation
+  accurate sum 12.8000000128     sum 12.8000000128     diff  1.776e-15 relative diff  1.388e-16 runtime 0.000053   OpenMP sum with double double kahan sum accumulator
+  accurate sum 12.8000000128     sum 12.8000000128     diff          0 relative diff          0 runtime 0.000003   OpenMP sum with double double kahan sum accumulator with bit truncation
+
+SETTINGS INFO -- ncells 512 log 9 ndigits 4 ndigitsld 1 nbits 13 nbitsld 5
+Initializing mesh with Leblanc problem, high values first
+  accurate sum 25.6000000256     sum 25.60000002559964 diff -3.588e-13 relative diff -1.402e-14 runtime 0.000000   Serial sum
+  accurate sum 25.6000000256     sum 25.60000002559994 diff -5.684e-14 relative diff  -2.22e-15 runtime 0.000000   Serial sum (OpenMP SIMD pragma)
+  accurate sum 25.6000000256     sum 25.6000000256     diff          0 relative diff          0 runtime 0.000001   Serial sum with digit truncation
+  accurate sum 25.60000002558809 sum 25.60000002558809 diff          0 relative diff          0 runtime 0.000000   Serial sum with bit truncation
+  accurate sum 25.6000000256     sum 25.6000000256     diff -1.023e-16 relative diff -3.998e-18 runtime 0.000001   Serial sum with long double accumulator
+  accurate sum 25.6000000256     sum 25.6000000256     diff          0 relative diff          0 runtime 0.000001   Serial sum with long double accumulator with ndigit truncation
+  accurate sum 25.60000002559991 sum 25.60000002559991 diff          0 relative diff          0 runtime 0.000001   Serial sum with long double accumulator with bit truncation
+  accurate sum 25.6000000256     sum 25.6000000256     diff          0 relative diff          0 runtime 0.000001   Serial sum with double double kahan sum accumulator
+  accurate sum 25.6000000256     sum 25.6000000256     diff          0 relative diff          0 runtime 0.000000   Intel Vectorized sum with double double kahan sum accumulator
+  accurate sum 25.6000000256     sum 25.6000000256     diff          0 relative diff          0 runtime 0.000000   GCC Extensions Vectorized sum with double double kahan sum accumulator
+  accurate sum 25.6000000256     sum 25.6000000256     diff -3.553e-15 relative diff -1.388e-16 runtime 0.000001   8 wide GCC vector extensions Kahan sum
+  accurate sum 25.6000000256     sum 25.6000000256     diff          0 relative diff          0 runtime 0.000002   Serial sum with double double knuth sum accumulator
+  accurate sum 25.6000000256     sum 25.6000000256     diff          0 relative diff          0 runtime 0.000001   Intel Vectorized sum with double double knuth sum accumulator
+  accurate sum 25.6000000256     sum 25.6000000256     diff          0 relative diff          0 runtime 0.000001   GCC Extensions Vectorized sum with double double knuth sum accumulator
+  accurate sum 25.6000000256     sum 25.6000000256     diff          0 relative diff          0 runtime 0.000001   Pair-wise sum
+
+  accurate sum 25.6000000256            sum 25.60000002560000142108  diff 1.4210854724529e-15  relative diff 5.5511151212179e-17  runtime 0.000016   Serial sum with quad double accumulator
+  accurate sum 25.6000000256            sum 25.6000000256            diff 3.9443045261051e-31  relative diff 1.540743953969e-32   runtime 0.000009   Serial sum with quad double accumulator and quad terms
+
+  accurate sum 25.6000000256     sum 25.60000002559997 diff -3.197e-14 relative diff -1.249e-15 runtime 0.000001   OpenMP sum
+  accurate sum 25.600000025599   sum 25.600000025599   diff          0 relative diff          0 runtime 0.000002   OpenMP sum with bit truncation
+  accurate sum 25.6000000256     sum 25.6000000256     diff  3.553e-15 relative diff  1.388e-16 runtime 0.000002   OpenMP sum with double double kahan sum accumulator
+  accurate sum 25.6000000256     sum 25.6000000256     diff          0 relative diff          0 runtime 0.000003   OpenMP sum with double double kahan sum accumulator with bit truncation
+
+SETTINGS INFO -- ncells 1024 log 10 ndigits 5 ndigitsld 2 nbits 14 nbitsld 6
+Initializing mesh with Leblanc problem, high values first
+  accurate sum 51.2000000512     sum 51.20000005120137 diff  1.371e-12 relative diff  2.678e-14 runtime 0.000001   Serial sum
+  accurate sum 51.2000000512     sum 51.20000005119928 diff -7.176e-13 relative diff -1.402e-14 runtime 0.000000   Serial sum (OpenMP SIMD pragma)
+  accurate sum 51.200000051      sum 51.200000051      diff          0 relative diff          0 runtime 0.000001   Serial sum with digit truncation
+  accurate sum 51.20000005117618 sum 51.20000005117618 diff          0 relative diff          0 runtime 0.000001   Serial sum with bit truncation
+  accurate sum 51.2000000512     sum 51.20000005120001 diff  6.835e-16 relative diff  1.335e-17 runtime 0.000001   Serial sum with long double accumulator
+  accurate sum 51.2000000512     sum 51.2000000512     diff          0 relative diff          0 runtime 0.000002   Serial sum with long double accumulator with ndigit truncation
+  accurate sum 51.20000005119982 sum 51.20000005119982 diff          0 relative diff          0 runtime 0.000001   Serial sum with long double accumulator with bit truncation
+  accurate sum 51.2000000512     sum 51.2000000512     diff          0 relative diff          0 runtime 0.000002   Serial sum with double double kahan sum accumulator
+  accurate sum 51.2000000512     sum 51.2000000512     diff          0 relative diff          0 runtime 0.000001   Intel Vectorized sum with double double kahan sum accumulator
+  accurate sum 51.2000000512     sum 51.2000000512     diff          0 relative diff          0 runtime 0.000001   GCC Extensions Vectorized sum with double double kahan sum accumulator
+  accurate sum 51.2000000512     sum 51.20000005119999 diff -7.105e-15 relative diff -1.388e-16 runtime 0.000001   8 wide GCC vector extensions Kahan sum
+  accurate sum 51.2000000512     sum 51.2000000512     diff          0 relative diff          0 runtime 0.000005   Serial sum with double double knuth sum accumulator
+  accurate sum 51.2000000512     sum 51.2000000512     diff          0 relative diff          0 runtime 0.000001   Intel Vectorized sum with double double knuth sum accumulator
+  accurate sum 51.2000000512     sum 51.2000000512     diff          0 relative diff          0 runtime 0.000001   GCC Extensions Vectorized sum with double double knuth sum accumulator
+  accurate sum 51.2000000512     sum 51.2000000512     diff          0 relative diff          0 runtime 0.000006   Pair-wise sum
+
+  accurate sum 51.2000000512            sum 51.20000005120000284217  diff 2.8421709449057e-15  relative diff 5.5511151212179e-17  runtime 0.000027   Serial sum with quad double accumulator
+  accurate sum 51.2000000512            sum 51.2000000512            diff 1.0230539864585e-30  relative diff 1.9981523153036e-32  runtime 0.000017   Serial sum with quad double accumulator and quad terms
+
+  accurate sum 51.2000000512     sum 51.20000005119988 diff -1.208e-13 relative diff -2.359e-15 runtime 0.000012   OpenMP sum
+  accurate sum 51.20000005119073 sum 51.20000005119073 diff          0 relative diff          0 runtime 0.000002   OpenMP sum with bit truncation
+  accurate sum 51.2000000512     sum 51.20000005120001 diff  7.105e-15 relative diff  1.388e-16 runtime 0.000014   OpenMP sum with double double kahan sum accumulator
+  accurate sum 51.20000005119999 sum 51.20000005119999 diff          0 relative diff          0 runtime 0.000011   OpenMP sum with double double kahan sum accumulator with bit truncation
+
+SETTINGS INFO -- ncells 2048 log 11 ndigits 5 ndigitsld 2 nbits 15 nbitsld 6
+Initializing mesh with Leblanc problem, high values first
+  accurate sum 102.4000001024    sum 102.4000001024003 diff  2.842e-13 relative diff  2.776e-15 runtime 0.000002   Serial sum
+  accurate sum 102.4000001024    sum 102.4000001024027 diff  2.743e-12 relative diff  2.678e-14 runtime 0.000003   Serial sum (OpenMP SIMD pragma)
+  accurate sum 102.4000001       sum 102.4000001       diff          0 relative diff          0 runtime 0.000002   Serial sum with digit truncation
+  accurate sum 102.4000001023524 sum 102.4000001023524 diff          0 relative diff          0 runtime 0.000002   Serial sum with bit truncation
+  accurate sum 102.4000001024    sum 102.4000001024    diff  1.367e-15 relative diff  1.335e-17 runtime 0.000003   Serial sum with long double accumulator
+  accurate sum 102.4000001024    sum 102.4000001024    diff          0 relative diff          0 runtime 0.000003   Serial sum with long double accumulator with ndigit truncation
+  accurate sum 102.4000001023996 sum 102.4000001023996 diff          0 relative diff          0 runtime 0.000003   Serial sum with long double accumulator with bit truncation
+  accurate sum 102.4000001024    sum 102.4000001024    diff          0 relative diff          0 runtime 0.000005   Serial sum with double double kahan sum accumulator
+  accurate sum 102.4000001024    sum 102.4000001024    diff          0 relative diff          0 runtime 0.000001   Intel Vectorized sum with double double kahan sum accumulator
+  accurate sum 102.4000001024    sum 102.4000001024    diff          0 relative diff          0 runtime 0.000001   GCC Extensions Vectorized sum with double double kahan sum accumulator
+  accurate sum 102.4000001024    sum 102.4000001024    diff -1.421e-14 relative diff -1.388e-16 runtime 0.000002   8 wide GCC vector extensions Kahan sum
+  accurate sum 102.4000001024    sum 102.4000001024    diff          0 relative diff          0 runtime 0.000009   Serial sum with double double knuth sum accumulator
+  accurate sum 102.4000001024    sum 102.4000001024    diff          0 relative diff          0 runtime 0.000002   Intel Vectorized sum with double double knuth sum accumulator
+  accurate sum 102.4000001024    sum 102.4000001024    diff          0 relative diff          0 runtime 0.000002   GCC Extensions Vectorized sum with double double knuth sum accumulator
+  accurate sum 102.4000001024    sum 102.4000001024    diff          0 relative diff          0 runtime 0.000008   Pair-wise sum
+
+  accurate sum 102.4000001024           sum 102.4000001024000056843  diff 5.6843418898115e-15  relative diff 5.5511151212179e-17  runtime 0.000056   Serial sum with quad double accumulator
+  accurate sum 102.4000001024           sum 102.4000001024           diff -8.6281661508548e-32 relative diff -8.4259434982682e-34 runtime 0.000035   Serial sum with quad double accumulator and quad terms
+
+  accurate sum 102.4000001024    sum 102.4000001024004 diff  3.695e-13 relative diff  3.608e-15 runtime 0.000001   OpenMP sum
+  accurate sum 102.4000001023524 sum 102.4000001023524 diff          0 relative diff          0 runtime 0.000002   OpenMP sum with bit truncation
+  accurate sum 102.4000001024    sum 102.4000001024    diff  1.421e-14 relative diff  1.388e-16 runtime 0.000003   OpenMP sum with double double kahan sum accumulator
+  accurate sum 102.4000001024    sum 102.4000001024    diff          0 relative diff          0 runtime 0.000003   OpenMP sum with double double kahan sum accumulator with bit truncation
+
+SETTINGS INFO -- ncells 4096 log 12 ndigits 5 ndigitsld 2 nbits 15 nbitsld 7
+Initializing mesh with Leblanc problem, high values first
+  accurate sum 204.8000002048    sum 204.8000002047672 diff  -3.28e-11 relative diff -1.601e-13 runtime 0.000003   Serial sum
+  accurate sum 204.8000002048    sum 204.8000002048006 diff  5.684e-13 relative diff  2.776e-15 runtime 0.000002   Serial sum (OpenMP SIMD pragma)
+  accurate sum 204.8000002       sum 204.8000002       diff          0 relative diff          0 runtime 0.000003   Serial sum with digit truncation
+  accurate sum 204.8000002047047 sum 204.8000002047047 diff          0 relative diff          0 runtime 0.000003   Serial sum with bit truncation
+  accurate sum 204.8000002048    sum 204.8000002048    diff -1.148e-14 relative diff -5.604e-17 runtime 0.000005   Serial sum with long double accumulator
+  accurate sum 204.8000002048    sum 204.8000002048    diff          0 relative diff          0 runtime 0.000005   Serial sum with long double accumulator with ndigit truncation
+  accurate sum 204.8000002047993 sum 204.8000002047993 diff          0 relative diff          0 runtime 0.000005   Serial sum with long double accumulator with bit truncation
+  accurate sum 204.8000002048    sum 204.8000002048    diff          0 relative diff          0 runtime 0.000009   Serial sum with double double kahan sum accumulator
+  accurate sum 204.8000002048    sum 204.8000002048    diff          0 relative diff          0 runtime 0.000003   Intel Vectorized sum with double double kahan sum accumulator
+  accurate sum 204.8000002048    sum 204.8000002048    diff          0 relative diff          0 runtime 0.000003   GCC Extensions Vectorized sum with double double kahan sum accumulator
+  accurate sum 204.8000002048    sum 204.8000002048    diff -2.842e-14 relative diff -1.388e-16 runtime 0.000003   8 wide GCC vector extensions Kahan sum
+  accurate sum 204.8000002048    sum 204.8000002048    diff          0 relative diff          0 runtime 0.000018   Serial sum with double double knuth sum accumulator
+  accurate sum 204.8000002048    sum 204.8000002048    diff          0 relative diff          0 runtime 0.000005   Intel Vectorized sum with double double knuth sum accumulator
+  accurate sum 204.8000002048    sum 204.8000002048    diff          0 relative diff          0 runtime 0.000005   GCC Extensions Vectorized sum with double double knuth sum accumulator
+  accurate sum 204.8000002048    sum 204.8000002048    diff          0 relative diff          0 runtime 0.000012   Pair-wise sum
+
+  accurate sum 204.8000002048           sum 204.8000002048000113686  diff 1.1368683779623e-14  relative diff 5.5511151212179e-17  runtime 0.000108   Serial sum with quad double accumulator
+  accurate sum 204.8000002048           sum 204.8000002048           diff -2.9113897783313e-29 relative diff -1.4215770387793e-31 runtime 0.000070   Serial sum with quad double accumulator and quad terms
+
+  accurate sum 204.8000002048    sum 204.8000002048018 diff  1.847e-12 relative diff  9.021e-15 runtime 0.000002   OpenMP sum
+  accurate sum 204.8000002047047 sum 204.8000002047047 diff          0 relative diff          0 runtime 0.000014   OpenMP sum with bit truncation
+  accurate sum 204.8000002048    sum 204.8000002048    diff  2.842e-14 relative diff  1.388e-16 runtime 0.000013   OpenMP sum with double double kahan sum accumulator
+  accurate sum 204.8000002048    sum 204.8000002048    diff          0 relative diff          0 runtime 0.000004   OpenMP sum with double double kahan sum accumulator with bit truncation
+
+SETTINGS INFO -- ncells 8192 log 13 ndigits 5 ndigitsld 2 nbits 17 nbitsld 7
+Initializing mesh with Leblanc problem, high values first
+  accurate sum 409.6000004096    sum 409.6000004095737 diff -2.626e-11 relative diff -6.412e-14 runtime 0.000006   Serial sum
+  accurate sum 409.6000004096    sum 409.6000004095344 diff  -6.56e-11 relative diff -1.601e-13 runtime 0.000003   Serial sum (OpenMP SIMD pragma)
+  accurate sum 409.60000041      sum 409.60000041      diff          0 relative diff          0 runtime 0.000006   Serial sum with digit truncation
+  accurate sum 409.6000004038215 sum 409.6000004038215 diff          0 relative diff          0 runtime 0.000006   Serial sum with bit truncation
+  accurate sum 409.6000004096    sum 409.6000004096001 diff  3.389e-14 relative diff  8.274e-17 runtime 0.000010   Serial sum with long double accumulator
+  accurate sum 409.6000004096    sum 409.6000004096    diff          0 relative diff          0 runtime 0.000011   Serial sum with long double accumulator with ndigit truncation
+  accurate sum 409.6000004095986 sum 409.6000004095986 diff          0 relative diff          0 runtime 0.000010   Serial sum with long double accumulator with bit truncation
+  accurate sum 409.6000004096    sum 409.6000004096    diff          0 relative diff          0 runtime 0.000021   Serial sum with double double kahan sum accumulator
+  accurate sum 409.6000004096    sum 409.6000004096    diff          0 relative diff          0 runtime 0.000005   Intel Vectorized sum with double double kahan sum accumulator
+  accurate sum 409.6000004096    sum 409.6000004096    diff          0 relative diff          0 runtime 0.000005   GCC Extensions Vectorized sum with double double kahan sum accumulator
+  accurate sum 409.6000004096    sum 409.6000004095999 diff -5.684e-14 relative diff -1.388e-16 runtime 0.000006   8 wide GCC vector extensions Kahan sum
+  accurate sum 409.6000004096    sum 409.6000004096    diff          0 relative diff          0 runtime 0.000039   Serial sum with double double knuth sum accumulator
+  accurate sum 409.6000004096    sum 409.6000004096    diff          0 relative diff          0 runtime 0.000009   Intel Vectorized sum with double double knuth sum accumulator
+  accurate sum 409.6000004096    sum 409.6000004096    diff          0 relative diff          0 runtime 0.000009   GCC Extensions Vectorized sum with double double knuth sum accumulator
+  accurate sum 409.6000004096    sum 409.6000004096    diff          0 relative diff          0 runtime 0.000028   Pair-wise sum
+
+  accurate sum 409.6000004096           sum 409.6000004096000227373  diff 2.2737367559246e-14  relative diff 5.5511151212179e-17  runtime 0.000232   Serial sum with quad double accumulator
+  accurate sum 409.6000004096           sum 409.6000004096           diff 7.6864634452472e-29  relative diff 1.8765779876857e-31  runtime 0.000137   Serial sum with quad double accumulator and quad terms
+
+  accurate sum 409.6000004096    sum 409.6000004095938 diff -6.196e-12 relative diff -1.513e-14 runtime 0.000003   OpenMP sum
+  accurate sum 409.6000004094094 sum 409.6000004094094 diff          0 relative diff          0 runtime 0.000002   OpenMP sum with bit truncation
+  accurate sum 409.6000004096    sum 409.6000004096001 diff  5.684e-14 relative diff  1.388e-16 runtime 0.000005   OpenMP sum with double double kahan sum accumulator
+  accurate sum 409.6000004095999 sum 409.6000004095999 diff          0 relative diff          0 runtime 0.000005   OpenMP sum with double double kahan sum accumulator with bit truncation
+
+SETTINGS INFO -- ncells 16384 log 14 ndigits 5 ndigitsld 2 nbits 18 nbitsld 8
+Initializing mesh with Leblanc problem, high values first
+  accurate sum 819.2000008192    sum 819.2000008196816 diff  4.816e-10 relative diff  5.879e-13 runtime 0.000012   Serial sum
+  accurate sum 819.2000008192    sum 819.2000008191475 diff -5.252e-11 relative diff -6.412e-14 runtime 0.000006   Serial sum (OpenMP SIMD pragma)
+  accurate sum 819.20000082      sum 819.20000082      diff          0 relative diff          0 runtime 0.000013   Serial sum with digit truncation
+  accurate sum 819.2000007927418 sum 819.2000007927418 diff          0 relative diff          0 runtime 0.000013   Serial sum with bit truncation
+  accurate sum 819.2000008192    sum 819.2000008192    diff -1.749e-14 relative diff -2.135e-17 runtime 0.000020   Serial sum with long double accumulator
+  accurate sum 819.2000008192    sum 819.2000008192    diff          0 relative diff          0 runtime 0.000021   Serial sum with long double accumulator with ndigit truncation
+  accurate sum 819.2000008191972 sum 819.2000008191972 diff          0 relative diff          0 runtime 0.000020   Serial sum with long double accumulator with bit truncation
+  accurate sum 819.2000008192    sum 819.2000008192    diff          0 relative diff          0 runtime 0.000039   Serial sum with double double kahan sum accumulator
+  accurate sum 819.2000008192    sum 819.2000008192    diff          0 relative diff          0 runtime 0.000010   Intel Vectorized sum with double double kahan sum accumulator
+  accurate sum 819.2000008192    sum 819.2000008192    diff          0 relative diff          0 runtime 0.000010   GCC Extensions Vectorized sum with double double kahan sum accumulator
+  accurate sum 819.2000008192    sum 819.2000008191999 diff -1.137e-13 relative diff -1.388e-16 runtime 0.000012   8 wide GCC vector extensions Kahan sum
+  accurate sum 819.2000008192    sum 819.2000008192    diff          0 relative diff          0 runtime 0.000073   Serial sum with double double knuth sum accumulator
+  accurate sum 819.2000008192    sum 819.2000008192    diff          0 relative diff          0 runtime 0.000021   Intel Vectorized sum with double double knuth sum accumulator
+  accurate sum 819.2000008192    sum 819.2000008192    diff          0 relative diff          0 runtime 0.000018   GCC Extensions Vectorized sum with double double knuth sum accumulator
+  accurate sum 819.2000008192    sum 819.2000008192    diff          0 relative diff          0 runtime 0.000042   Pair-wise sum
+
+  accurate sum 819.2000008192           sum 819.2000008192000454747  diff 4.5474735118492e-14  relative diff 5.5511151212179e-17  runtime 0.000448   Serial sum with quad double accumulator
+  accurate sum 819.2000008192           sum 819.2000008192           diff -1.9080573145033e-28 relative diff -2.3291715241641e-31 runtime 0.000271   Serial sum with quad double accumulator and quad terms
+
+  accurate sum 819.2000008192    sum 819.2000008191707 diff -2.933e-11 relative diff  -3.58e-14 runtime 0.000015   OpenMP sum
+  accurate sum 819.2000008188188 sum 819.2000008188188 diff          0 relative diff          0 runtime 0.000003   OpenMP sum with bit truncation
+  accurate sum 819.2000008192    sum 819.2000008191999 diff -1.137e-13 relative diff -1.388e-16 runtime 0.000008   OpenMP sum with double double kahan sum accumulator
+  accurate sum 819.2000008191999 sum 819.2000008191999 diff          0 relative diff          0 runtime 0.000008   OpenMP sum with double double kahan sum accumulator with bit truncation
+
+SETTINGS INFO -- ncells 32768 log 15 ndigits 6 ndigitsld 3 nbits 19 nbitsld 9
+Initializing mesh with Leblanc problem, high values first
+  accurate sum 1638.4000016384   sum 1638.400001638733 diff  3.331e-10 relative diff  2.033e-13 runtime 0.000025   Serial sum
+  accurate sum 1638.4000016384   sum 1638.400001639363 diff  9.632e-10 relative diff  5.879e-13 runtime 0.000012   Serial sum (OpenMP SIMD pragma)
+  accurate sum 1638.400002       sum 1638.400002       diff          0 relative diff          0 runtime 0.000027   Serial sum with digit truncation
+  accurate sum 1638.400001525879 sum 1638.400001525879 diff          0 relative diff          0 runtime 0.000025   Serial sum with bit truncation
+  accurate sum 1638.4000016384   sum 1638.4000016384   diff -1.771e-13 relative diff -1.081e-16 runtime 0.000041   Serial sum with long double accumulator
+  accurate sum 1638.400001638    sum 1638.400001638    diff          0 relative diff          0 runtime 0.000041   Serial sum with long double accumulator with ndigit truncation
+  accurate sum 1638.400001638336 sum 1638.400001638336 diff          0 relative diff          0 runtime 0.000043   Serial sum with long double accumulator with bit truncation
+  accurate sum 1638.4000016384   sum 1638.4000016384   diff          0 relative diff          0 runtime 0.000089   Serial sum with double double kahan sum accumulator
+  accurate sum 1638.4000016384   sum 1638.4000016384   diff          0 relative diff          0 runtime 0.000021   Intel Vectorized sum with double double kahan sum accumulator
+  accurate sum 1638.4000016384   sum 1638.4000016384   diff          0 relative diff          0 runtime 0.000050   GCC Extensions Vectorized sum with double double kahan sum accumulator
+  accurate sum 1638.4000016384   sum 1638.4000016384   diff -2.274e-13 relative diff -1.388e-16 runtime 0.000025   8 wide GCC vector extensions Kahan sum
+  accurate sum 1638.4000016384   sum 1638.4000016384   diff          0 relative diff          0 runtime 0.000149   Serial sum with double double knuth sum accumulator
+  accurate sum 1638.4000016384   sum 1638.4000016384   diff          0 relative diff          0 runtime 0.000037   Intel Vectorized sum with double double knuth sum accumulator
+  accurate sum 1638.4000016384   sum 1638.4000016384   diff          0 relative diff          0 runtime 0.000037   GCC Extensions Vectorized sum with double double knuth sum accumulator
+  accurate sum 1638.4000016384   sum 1638.4000016384   diff          0 relative diff          0 runtime 0.000089   Pair-wise sum
+
+  accurate sum 1638.4000016384          sum 1638.400001638400090949  diff 9.0949470236983e-14  relative diff 5.5511151212179e-17  runtime 0.000949   Serial sum with quad double accumulator
+  accurate sum 1638.4000016384          sum 1638.4000016384          diff 6.8749227890011e-28  relative diff 4.1961198621376e-31  runtime 0.000668   Serial sum with quad double accumulator and quad terms
+
+  accurate sum 1638.4000016384   sum 1638.400001638499 diff  9.868e-11 relative diff  6.023e-14 runtime 0.000005   OpenMP sum
+  accurate sum 1638.400001630187 sum 1638.400001630187 diff          0 relative diff          0 runtime 0.000005   OpenMP sum with bit truncation
+  accurate sum 1638.4000016384   sum 1638.4000016384   diff  2.274e-13 relative diff  1.388e-16 runtime 0.000014   OpenMP sum with double double kahan sum accumulator
+  accurate sum 1638.4000016384   sum 1638.4000016384   diff          0 relative diff          0 runtime 0.000023   OpenMP sum with double double kahan sum accumulator with bit truncation
+
+SETTINGS INFO -- ncells 65536 log 16 ndigits 6 ndigitsld 3 nbits 20 nbitsld 9
+Initializing mesh with Leblanc problem, high values first
+  accurate sum 3276.8000032768   sum 3276.800003276371 diff -4.293e-10 relative diff  -1.31e-13 runtime 0.000049   Serial sum
+  accurate sum 3276.8000032768   sum 3276.800003277466 diff  6.662e-10 relative diff  2.033e-13 runtime 0.000027   Serial sum (OpenMP SIMD pragma)
+  accurate sum 3276.800003       sum 3276.800003       diff          0 relative diff          0 runtime 0.000049   Serial sum with digit truncation
+  accurate sum 3276.800003051758 sum 3276.800003051758 diff          0 relative diff          0 runtime 0.000049   Serial sum with bit truncation
+  accurate sum 3276.8000032768   sum 3276.800003276801 diff   8.68e-13 relative diff  2.649e-16 runtime 0.000099   Serial sum with long double accumulator
+  accurate sum 3276.800003277    sum 3276.800003277    diff          0 relative diff          0 runtime 0.000082   Serial sum with long double accumulator with ndigit truncation
+  accurate sum 3276.800003276672 sum 3276.800003276672 diff          0 relative diff          0 runtime 0.000084   Serial sum with long double accumulator with bit truncation
+  accurate sum 3276.8000032768   sum 3276.8000032768   diff          0 relative diff          0 runtime 0.000149   Serial sum with double double kahan sum accumulator
+  accurate sum 3276.8000032768   sum 3276.8000032768   diff          0 relative diff          0 runtime 0.000041   Intel Vectorized sum with double double kahan sum accumulator
+  accurate sum 3276.8000032768   sum 3276.8000032768   diff          0 relative diff          0 runtime 0.000041   GCC Extensions Vectorized sum with double double kahan sum accumulator
+  accurate sum 3276.8000032768   sum 3276.8000032768   diff -4.547e-13 relative diff -1.388e-16 runtime 0.000050   8 wide GCC vector extensions Kahan sum
+  accurate sum 3276.8000032768   sum 3276.8000032768   diff          0 relative diff          0 runtime 0.000299   Serial sum with double double knuth sum accumulator
+  accurate sum 3276.8000032768   sum 3276.8000032768   diff          0 relative diff          0 runtime 0.000076   Intel Vectorized sum with double double knuth sum accumulator
+  accurate sum 3276.8000032768   sum 3276.8000032768   diff          0 relative diff          0 runtime 0.000235   GCC Extensions Vectorized sum with double double knuth sum accumulator
+  accurate sum 3276.8000032768   sum 3276.8000032768   diff          0 relative diff          0 runtime 0.000281   Pair-wise sum
+
+  accurate sum 3276.8000032768          sum 3276.800003276800181898  diff 1.8189894047397e-13  relative diff 5.5511151212179e-17  runtime 0.001995   Serial sum with quad double accumulator
+  accurate sum 3276.8000032768          sum 3276.8000032768          diff -6.037546938109e-27  relative diff -1.8425131018285e-30 runtime 0.001368   Serial sum with quad double accumulator and quad terms
+
+  accurate sum 3276.8000032768   sum 3276.800003277271 diff  4.707e-10 relative diff  1.436e-13 runtime 0.000009   OpenMP sum
+  accurate sum 3276.800003260374 sum 3276.800003260374 diff          0 relative diff          0 runtime 0.000019   OpenMP sum with bit truncation
+  accurate sum 3276.8000032768   sum 3276.8000032768   diff -4.547e-13 relative diff -1.388e-16 runtime 0.000025   OpenMP sum with double double kahan sum accumulator
+  accurate sum 3276.8000032768   sum 3276.8000032768   diff          0 relative diff          0 runtime 0.000042   OpenMP sum with double double kahan sum accumulator with bit truncation
+
+SETTINGS INFO -- ncells 131072 log 17 ndigits 6 ndigitsld 3 nbits 21 nbitsld 10
+Initializing mesh with Leblanc problem, high values first
+  accurate sum 6553.6000065536   sum 6553.600006562821 diff  9.221e-09 relative diff  1.407e-12 runtime 0.000126   Serial sum
+  accurate sum 6553.6000065536   sum 6553.600006552741 diff -8.586e-10 relative diff  -1.31e-13 runtime 0.000061   Serial sum (OpenMP SIMD pragma)
+  accurate sum 6553.600007       sum 6553.600007       diff          0 relative diff          0 runtime 0.000126   Serial sum with digit truncation
+  accurate sum 6553.600006103516 sum 6553.600006103516 diff          0 relative diff          0 runtime 0.000125   Serial sum with bit truncation
+  accurate sum 6553.6000065536   sum 6553.600006553605 diff  3.868e-12 relative diff  5.901e-16 runtime 0.000208   Serial sum with long double accumulator
+  accurate sum 6553.600006554    sum 6553.600006554    diff          0 relative diff          0 runtime 0.000175   Serial sum with long double accumulator with ndigit truncation
+  accurate sum 6553.600006553344 sum 6553.600006553344 diff          0 relative diff          0 runtime 0.000180   Serial sum with long double accumulator with bit truncation
+  accurate sum 6553.6000065536   sum 6553.6000065536   diff          0 relative diff          0 runtime 0.000299   Serial sum with double double kahan sum accumulator
+  accurate sum 6553.6000065536   sum 6553.6000065536   diff          0 relative diff          0 runtime 0.000084   Intel Vectorized sum with double double kahan sum accumulator
+  accurate sum 6553.6000065536   sum 6553.6000065536   diff          0 relative diff          0 runtime 0.000084   GCC Extensions Vectorized sum with double double kahan sum accumulator
+  accurate sum 6553.6000065536   sum 6553.600006553599 diff -9.095e-13 relative diff -1.388e-16 runtime 0.000100   8 wide GCC vector extensions Kahan sum
+  accurate sum 6553.6000065536   sum 6553.6000065536   diff          0 relative diff          0 runtime 0.000657   Serial sum with double double knuth sum accumulator
+  accurate sum 6553.6000065536   sum 6553.6000065536   diff          0 relative diff          0 runtime 0.000186   Intel Vectorized sum with double double knuth sum accumulator
+  accurate sum 6553.6000065536   sum 6553.6000065536   diff          0 relative diff          0 runtime 0.000186   GCC Extensions Vectorized sum with double double knuth sum accumulator
+  accurate sum 6553.6000065536   sum 6553.6000065536   diff          0 relative diff          0 runtime 0.000419   Pair-wise sum
+
+  accurate sum 6553.6000065536          sum 6553.600006553600363797  diff 3.6379788094793e-13  relative diff 5.5511151212179e-17  runtime 0.003886   Serial sum with quad double accumulator
+  accurate sum 6553.6000065536          sum 6553.6000065536          diff 2.2517245678629e-26  relative diff 3.435859017351e-30   runtime 0.002113   Serial sum with quad double accumulator and quad terms
+
+  accurate sum 6553.6000065536   sum 6553.600006552022 diff -1.578e-09 relative diff -2.408e-13 runtime 0.000017   OpenMP sum
+  accurate sum 6553.600006461143 sum 6553.600006461143 diff          0 relative diff          0 runtime 0.000029   OpenMP sum with bit truncation
+  accurate sum 6553.6000065536   sum 6553.600006553599 diff -9.095e-13 relative diff -1.388e-16 runtime 0.000048   OpenMP sum with double double kahan sum accumulator
+  accurate sum 6553.600006553599 sum 6553.600006553599 diff          0 relative diff          0 runtime 0.000088   OpenMP sum with double double kahan sum accumulator with bit truncation
+
+SETTINGS INFO -- ncells 262144 log 18 ndigits 6 ndigitsld 3 nbits 22 nbitsld 10
+Initializing mesh with Leblanc problem, high values first
+  accurate sum 13107.2000131072  sum 13107.20001314317 diff  3.597e-08 relative diff  2.745e-12 runtime 0.000253   Serial sum
+  accurate sum 13107.2000131072  sum 13107.20001312564 diff  1.844e-08 relative diff  1.407e-12 runtime 0.000127   Serial sum (OpenMP SIMD pragma)
+  accurate sum 13107.20001       sum 13107.20001       diff          0 relative diff          0 runtime 0.000274   Serial sum with digit truncation
+  accurate sum 13107.20001220703 sum 13107.20001220703 diff          0 relative diff          0 runtime 0.000253   Serial sum with bit truncation
+  accurate sum 13107.2000131072  sum 13107.20001310719 diff -1.196e-11 relative diff -9.126e-16 runtime 0.000414   Serial sum with long double accumulator
+  accurate sum 13107.20001311    sum 13107.20001311    diff          0 relative diff          0 runtime 0.000455   Serial sum with long double accumulator with ndigit truncation
+  accurate sum 13107.20001310669 sum 13107.20001310669 diff          0 relative diff          0 runtime 0.000415   Serial sum with long double accumulator with bit truncation
+  accurate sum 13107.2000131072  sum 13107.2000131072  diff          0 relative diff          0 runtime 0.000790   Serial sum with double double kahan sum accumulator
+  accurate sum 13107.2000131072  sum 13107.2000131072  diff          0 relative diff          0 runtime 0.000207   Intel Vectorized sum with double double kahan sum accumulator
+  accurate sum 13107.2000131072  sum 13107.2000131072  diff          0 relative diff          0 runtime 0.000231   GCC Extensions Vectorized sum with double double kahan sum accumulator
+  accurate sum 13107.2000131072  sum 13107.2000131072  diff -1.819e-12 relative diff -1.388e-16 runtime 0.000277   8 wide GCC vector extensions Kahan sum
+  accurate sum 13107.2000131072  sum 13107.2000131072  diff          0 relative diff          0 runtime 0.001514   Serial sum with double double knuth sum accumulator
+  accurate sum 13107.2000131072  sum 13107.2000131072  diff          0 relative diff          0 runtime 0.000393   Intel Vectorized sum with double double knuth sum accumulator
+  accurate sum 13107.2000131072  sum 13107.2000131072  diff          0 relative diff          0 runtime 0.000374   GCC Extensions Vectorized sum with double double knuth sum accumulator
+  accurate sum 13107.2000131072  sum 13107.2000131072  diff          0 relative diff          0 runtime 0.000861   Pair-wise sum
+
+  accurate sum 13107.2000131072         sum 13107.20001310720072759  diff 7.2759576189587e-13  relative diff 5.5511151212179e-17  runtime 0.007649   Serial sum with quad double accumulator
+  accurate sum 13107.2000131072         sum 13107.2000131072         diff 6.0240574166297e-26  relative diff 4.5959910664411e-30  runtime 0.003969   Serial sum with quad double accumulator and quad terms
+
+  accurate sum 13107.2000131072  sum 13107.20001309966 diff -7.538e-09 relative diff -5.751e-13 runtime 0.000032   OpenMP sum
+  accurate sum 13107.20001268387 sum 13107.20001268387 diff          0 relative diff          0 runtime 0.000041   OpenMP sum with bit truncation
+  accurate sum 13107.2000131072  sum 13107.2000131072  diff  1.819e-12 relative diff  1.388e-16 runtime 0.000100   OpenMP sum with double double kahan sum accumulator
+  accurate sum 13107.2000131072  sum 13107.2000131072  diff          0 relative diff          0 runtime 0.000114   OpenMP sum with double double kahan sum accumulator with bit truncation
+
+SETTINGS INFO -- ncells 524288 log 19 ndigits 6 ndigitsld 3 nbits 23 nbitsld 11
+Initializing mesh with Leblanc problem, high values first
+  accurate sum 26214.4000262144  sum 26214.40002564823 diff -5.662e-07 relative diff  -2.16e-11 runtime 0.000474   Serial sum
+  accurate sum 26214.4000262144  sum 26214.40002628635 diff  7.195e-08 relative diff  2.745e-12 runtime 0.000254   Serial sum (OpenMP SIMD pragma)
+  accurate sum 26214.40003       sum 26214.40003       diff          0 relative diff          0 runtime 0.000470   Serial sum with digit truncation
+  accurate sum 26214.40002441406 sum 26214.40002441406 diff          0 relative diff          0 runtime 0.000427   Serial sum with bit truncation
+  accurate sum 26214.4000262144  sum 26214.40002621434 diff -5.817e-11 relative diff -2.219e-15 runtime 0.000706   Serial sum with long double accumulator
+  accurate sum 26214.40002621    sum 26214.40002621    diff          0 relative diff          0 runtime 0.000680   Serial sum with long double accumulator with ndigit truncation
+  accurate sum 26214.40002620965 sum 26214.40002620965 diff          0 relative diff          0 runtime 0.000713   Serial sum with long double accumulator with bit truncation
+  accurate sum 26214.4000262144  sum 26214.4000262144  diff          0 relative diff          0 runtime 0.001252   Serial sum with double double kahan sum accumulator
+  accurate sum 26214.4000262144  sum 26214.4000262144  diff          0 relative diff          0 runtime 0.000391   Intel Vectorized sum with double double kahan sum accumulator
+  accurate sum 26214.4000262144  sum 26214.4000262144  diff          0 relative diff          0 runtime 0.000354   GCC Extensions Vectorized sum with double double kahan sum accumulator
+  accurate sum 26214.4000262144  sum 26214.4000262144  diff -3.638e-12 relative diff -1.388e-16 runtime 0.000450   8 wide GCC vector extensions Kahan sum
+  accurate sum 26214.4000262144  sum 26214.4000262144  diff          0 relative diff          0 runtime 0.002482   Serial sum with double double knuth sum accumulator
+  accurate sum 26214.4000262144  sum 26214.4000262144  diff          0 relative diff          0 runtime 0.000711   Intel Vectorized sum with double double knuth sum accumulator
+  accurate sum 26214.4000262144  sum 26214.4000262144  diff          0 relative diff          0 runtime 0.000641   GCC Extensions Vectorized sum with double double knuth sum accumulator
+  accurate sum 26214.4000262144  sum 26214.4000262144  diff          0 relative diff          0 runtime 0.001444   Pair-wise sum
+
+  accurate sum 26214.4000262144         sum 26214.40002621440145519  diff 1.4551915237917e-12  relative diff 5.5511151212179e-17  runtime 0.013520   Serial sum with quad double accumulator
+  accurate sum 26214.4000262144         sum 26214.4000262144         diff -4.3299943998857e-25 relative diff -1.6517617780898e-29 runtime 0.008263   Serial sum with quad double accumulator and quad terms
+
+  accurate sum 26214.4000262144  sum 26214.40002623964 diff  2.524e-08 relative diff   9.63e-13 runtime 0.000097   OpenMP sum
+  accurate sum 26214.40002441406 sum 26214.40002441406 diff          0 relative diff          0 runtime 0.000149   OpenMP sum with bit truncation
+  accurate sum 26214.4000262144  sum 26214.4000262144  diff  3.638e-12 relative diff  1.388e-16 runtime 0.000221   OpenMP sum with double double kahan sum accumulator
+  accurate sum 26214.4000262144  sum 26214.4000262144  diff          0 relative diff          0 runtime 0.000208   OpenMP sum with double double kahan sum accumulator with bit truncation
+
+SETTINGS INFO -- ncells 1048576 log 20 ndigits 7 ndigitsld 4 nbits 24 nbitsld 12
+Initializing mesh with Leblanc problem, high values first
+  accurate sum 52428.8000524288  sum 52428.80005292332 diff  4.945e-07 relative diff  9.432e-12 runtime 0.000984   Serial sum
+  accurate sum 52428.8000524288  sum 52428.80005129646 diff -1.132e-06 relative diff  -2.16e-11 runtime 0.000594   Serial sum (OpenMP SIMD pragma)
+  accurate sum 52428.8001        sum 52428.8001        diff          0 relative diff          0 runtime 0.000911   Serial sum with digit truncation
+  accurate sum 52428.80004882812 sum 52428.80004882812 diff          0 relative diff          0 runtime 0.000911   Serial sum with bit truncation
+  accurate sum 52428.8000524288  sum 52428.80005242807 diff -7.327e-10 relative diff -1.397e-14 runtime 0.001471   Serial sum with long double accumulator
+  accurate sum 52428.8000524     sum 52428.8000524     diff          0 relative diff          0 runtime 0.001436   Serial sum with long double accumulator with ndigit truncation
+  accurate sum 52428.8000524044  sum 52428.8000524044  diff          0 relative diff          0 runtime 0.001455   Serial sum with long double accumulator with bit truncation
+  accurate sum 52428.8000524288  sum 52428.8000524288  diff          0 relative diff          0 runtime 0.002404   Serial sum with double double kahan sum accumulator
+  accurate sum 52428.8000524288  sum 52428.8000524288  diff          0 relative diff          0 runtime 0.000779   Intel Vectorized sum with double double kahan sum accumulator
+  accurate sum 52428.8000524288  sum 52428.8000524288  diff          0 relative diff          0 runtime 0.000826   GCC Extensions Vectorized sum with double double kahan sum accumulator
+  accurate sum 52428.8000524288  sum 52428.80005242879 diff -7.276e-12 relative diff -1.388e-16 runtime 0.000956   8 wide GCC vector extensions Kahan sum
+  accurate sum 52428.8000524288  sum 52428.8000524288  diff          0 relative diff          0 runtime 0.004898   Serial sum with double double knuth sum accumulator
+  accurate sum 52428.8000524288  sum 52428.8000524288  diff          0 relative diff          0 runtime 0.001257   Intel Vectorized sum with double double knuth sum accumulator
+  accurate sum 52428.8000524288  sum 52428.8000524288  diff          0 relative diff          0 runtime 0.001334   GCC Extensions Vectorized sum with double double knuth sum accumulator
+  accurate sum 52428.8000524288  sum 52428.8000524288  diff          0 relative diff          0 runtime 0.003028   Pair-wise sum
+
+  accurate sum 52428.8000524288         sum 52428.80005242880291038  diff 2.9103830475835e-12  relative diff 5.5511151212179e-17  runtime 0.027597   Serial sum with quad double accumulator
+  accurate sum 52428.8000524288         sum 52428.8000524288         diff 5.4507764195875e-25  relative diff 1.039653094127e-29   runtime 0.015069   Serial sum with quad double accumulator and quad terms
+
+  accurate sum 52428.8000524288  sum 52428.80005254941 diff  1.206e-07 relative diff  2.301e-12 runtime 0.000550   OpenMP sum
+  accurate sum 52428.80004882812 sum 52428.80004882812 diff          0 relative diff          0 runtime 0.000278   OpenMP sum with bit truncation
+  accurate sum 52428.8000524288  sum 52428.80005242881 diff  7.276e-12 relative diff  1.388e-16 runtime 0.000703   OpenMP sum with double double kahan sum accumulator
+  accurate sum 52428.80005242879 sum 52428.80005242879 diff          0 relative diff          0 runtime 0.000503   OpenMP sum with double double kahan sum accumulator with bit truncation
+
+SETTINGS INFO -- ncells 2097152 log 21 ndigits 7 ndigitsld 4 nbits 25 nbitsld 12
+Initializing mesh with Leblanc problem, high values first
+  accurate sum 104857.6001048576 sum 104857.6001084272 diff   3.57e-06 relative diff  3.404e-11 runtime 0.001952   Serial sum
+  accurate sum 104857.6001048576 sum 104857.6001058466 diff   9.89e-07 relative diff  9.432e-12 runtime 0.001213   Serial sum (OpenMP SIMD pragma)
+  accurate sum 104857.6          sum 104857.6          diff          0 relative diff          0 runtime 0.001844   Serial sum with digit truncation
+  accurate sum 104857.6000976562 sum 104857.6000976562 diff          0 relative diff          0 runtime 0.001792   Serial sum with bit truncation
+  accurate sum 104857.6001048576 sum 104857.6001048604 diff  2.808e-09 relative diff  2.678e-14 runtime 0.002785   Serial sum with long double accumulator
+  accurate sum 104857.600105     sum 104857.600105     diff          0 relative diff          0 runtime 0.002778   Serial sum with long double accumulator with ndigit truncation
+  accurate sum 104857.6001048088 sum 104857.6001048088 diff          0 relative diff          0 runtime 0.002825   Serial sum with long double accumulator with bit truncation
+  accurate sum 104857.6001048576 sum 104857.6001048576 diff          0 relative diff          0 runtime 0.004872   Serial sum with double double kahan sum accumulator
+  accurate sum 104857.6001048576 sum 104857.6001048576 diff          0 relative diff          0 runtime 0.001511   Intel Vectorized sum with double double kahan sum accumulator
+  accurate sum 104857.6001048576 sum 104857.6001048576 diff          0 relative diff          0 runtime 0.001502   GCC Extensions Vectorized sum with double double kahan sum accumulator
+  accurate sum 104857.6001048576 sum 104857.6001048576 diff -1.455e-11 relative diff -1.388e-16 runtime 0.001711   8 wide GCC vector extensions Kahan sum
+  accurate sum 104857.6001048576 sum 104857.6001048576 diff          0 relative diff          0 runtime 0.013553   Serial sum with double double knuth sum accumulator
+  accurate sum 104857.6001048576 sum 104857.6001048576 diff          0 relative diff          0 runtime 0.003537   Intel Vectorized sum with double double knuth sum accumulator
+  accurate sum 104857.6001048576 sum 104857.6001048576 diff          0 relative diff          0 runtime 0.003768   GCC Extensions Vectorized sum with double double knuth sum accumulator
+  accurate sum 104857.6001048576 sum 104857.6001048576 diff          0 relative diff          0 runtime 0.007644   Pair-wise sum
+
+  accurate sum 104857.6001048576        sum 104857.6001048576058207  diff 5.8207660951669e-12  relative diff 5.5511151212179e-17  runtime 0.052699   Serial sum with quad double accumulator
+  accurate sum 104857.6001048576        sum 104857.6001048576        diff -3.2890451037923e-24 relative diff -3.1366778378517e-29 runtime 0.029924   Serial sum with quad double accumulator and quad terms
+
+  accurate sum 104857.6001048576 sum 104857.6001044537 diff -4.039e-07 relative diff -3.852e-12 runtime 0.000865   OpenMP sum
+  accurate sum 104857.6000976562 sum 104857.6000976562 diff          0 relative diff          0 runtime 0.000630   OpenMP sum with bit truncation
+  accurate sum 104857.6001048576 sum 104857.6001048576 diff  1.455e-11 relative diff  1.388e-16 runtime 0.000960   OpenMP sum with double double kahan sum accumulator
+  accurate sum 104857.6001048576 sum 104857.6001048576 diff          0 relative diff          0 runtime 0.000958   OpenMP sum with double double kahan sum accumulator with bit truncation
+
+SETTINGS INFO -- ncells 4194304 log 22 ndigits 7 ndigitsld 4 nbits 26 nbitsld 13
+Initializing mesh with Leblanc problem, high values first
+  accurate sum 209715.2002097152 sum 209715.2001908246 diff -1.889e-05 relative diff -9.008e-11 runtime 0.003710   Serial sum
+  accurate sum 209715.2002097152 sum 209715.2002168543 diff  7.139e-06 relative diff  3.404e-11 runtime 0.002303   Serial sum (OpenMP SIMD pragma)
+  accurate sum 209715.2          sum 209715.2          diff          0 relative diff          0 runtime 0.003606   Serial sum with digit truncation
+  accurate sum 209715.19921875   sum 209715.19921875   diff          0 relative diff          0 runtime 0.003515   Serial sum with bit truncation
+  accurate sum 209715.2002097152 sum 209715.2002097158 diff  5.755e-10 relative diff  2.744e-15 runtime 0.005598   Serial sum with long double accumulator
+  accurate sum 209715.20021      sum 209715.20021      diff          0 relative diff          0 runtime 0.005756   Serial sum with long double accumulator with ndigit truncation
+  accurate sum 209715.2002096176 sum 209715.2002096176 diff          0 relative diff          0 runtime 0.005605   Serial sum with long double accumulator with bit truncation
+  accurate sum 209715.2002097152 sum 209715.2002097152 diff          0 relative diff          0 runtime 0.009943   Serial sum with double double kahan sum accumulator
+  accurate sum 209715.2002097152 sum 209715.2002097152 diff          0 relative diff          0 runtime 0.002944   Intel Vectorized sum with double double kahan sum accumulator
+  accurate sum 209715.2002097152 sum 209715.2002097152 diff          0 relative diff          0 runtime 0.002965   GCC Extensions Vectorized sum with double double kahan sum accumulator
+  accurate sum 209715.2002097152 sum 209715.2002097152 diff  -2.91e-11 relative diff -1.388e-16 runtime 0.003341   8 wide GCC vector extensions Kahan sum
+  accurate sum 209715.2002097152 sum 209715.2002097152 diff          0 relative diff          0 runtime 0.019382   Serial sum with double double knuth sum accumulator
+  accurate sum 209715.2002097152 sum 209715.2002097152 diff          0 relative diff          0 runtime 0.005102   Intel Vectorized sum with double double knuth sum accumulator
+  accurate sum 209715.2002097152 sum 209715.2002097152 diff          0 relative diff          0 runtime 0.005199   GCC Extensions Vectorized sum with double double knuth sum accumulator
+  accurate sum 209715.2002097152 sum 209715.2002097152 diff          0 relative diff          0 runtime 0.006913   Pair-wise sum
+
+  accurate sum 209715.2002097152        sum 209715.2002097152116415  diff 1.1641532190334e-11  relative diff 5.5511151212179e-17  runtime 0.118701   Serial sum with quad double accumulator
+  accurate sum 209715.2002097152        sum 209715.2002097152        diff 2.3784295131933e-23  relative diff 1.1341235689234e-28  runtime 0.063488   Serial sum with quad double accumulator and quad terms
+
+  accurate sum 209715.2002097152 sum 209715.2002077854 diff  -1.93e-06 relative diff -9.202e-12 runtime 0.001558   OpenMP sum
+  accurate sum 209715.2001953125 sum 209715.2001953125 diff          0 relative diff          0 runtime 0.001134   OpenMP sum with bit truncation
+  accurate sum 209715.2002097152 sum 209715.2002097152 diff   2.91e-11 relative diff  1.388e-16 runtime 0.001850   OpenMP sum with double double kahan sum accumulator
+  accurate sum 209715.2002097152 sum 209715.2002097152 diff          0 relative diff          0 runtime 0.003839   OpenMP sum with double double kahan sum accumulator with bit truncation
+
+SETTINGS INFO -- ncells 8388608 log 23 ndigits 7 ndigitsld 4 nbits 27 nbitsld 13
+Initializing mesh with Leblanc problem, high values first
+  accurate sum 419430.4004194304 sum 419430.400462431  diff    4.3e-05 relative diff  1.025e-10 runtime 0.007212   Serial sum
+  accurate sum 419430.4004194304 sum 419430.4003816492 diff -3.778e-05 relative diff -9.008e-11 runtime 0.004567   Serial sum (OpenMP SIMD pragma)
+  accurate sum 419430.4          sum 419430.4          diff          0 relative diff          0 runtime 0.007106   Serial sum with digit truncation
+  accurate sum 419430.3984375    sum 419430.3984375    diff          0 relative diff          0 runtime 0.007094   Serial sum with bit truncation
+  accurate sum 419430.4004194304 sum 419430.4004193632 diff -6.722e-08 relative diff -1.603e-13 runtime 0.011244   Serial sum with long double accumulator
+  accurate sum 419430.400419     sum 419430.400419     diff          0 relative diff          0 runtime 0.011247   Serial sum with long double accumulator with ndigit truncation
+  accurate sum 419430.4004192352 sum 419430.4004192352 diff          0 relative diff          0 runtime 0.012439   Serial sum with long double accumulator with bit truncation
+  accurate sum 419430.4004194304 sum 419430.4004194304 diff          0 relative diff          0 runtime 0.024548   Serial sum with double double kahan sum accumulator
+  accurate sum 419430.4004194304 sum 419430.4004194304 diff          0 relative diff          0 runtime 0.006466   Intel Vectorized sum with double double kahan sum accumulator
+  accurate sum 419430.4004194304 sum 419430.4004194304 diff          0 relative diff          0 runtime 0.006104   GCC Extensions Vectorized sum with double double kahan sum accumulator
+  accurate sum 419430.4004194304 sum 419430.4004194303 diff -5.821e-11 relative diff -1.388e-16 runtime 0.006836   8 wide GCC vector extensions Kahan sum
+  accurate sum 419430.4004194304 sum 419430.4004194304 diff          0 relative diff          0 runtime 0.039102   Serial sum with double double knuth sum accumulator
+  accurate sum 419430.4004194304 sum 419430.4004194304 diff          0 relative diff          0 runtime 0.010294   Intel Vectorized sum with double double knuth sum accumulator
+  accurate sum 419430.4004194304 sum 419430.4004194304 diff          0 relative diff          0 runtime 0.010466   GCC Extensions Vectorized sum with double double knuth sum accumulator
+  accurate sum 419430.4004194304 sum 419430.4004194304 diff          0 relative diff          0 runtime 0.034695   Pair-wise sum
+
+  accurate sum 419430.4004194304        sum 419430.4004194304232830  diff 2.3283064380668e-11  relative diff 5.5511151212179e-17  runtime 0.221521   Serial sum with quad double accumulator
+  accurate sum 419430.4004194304        sum 419430.4004194304        diff 1.1756526599141e-23  relative diff 2.8029743641339e-29  runtime 0.120331   Serial sum with quad double accumulator and quad terms
+
+  accurate sum 419430.4004194304 sum 419430.400425893  diff  6.463e-06 relative diff  1.541e-11 runtime 0.002633   OpenMP sum
+  accurate sum 419430.400390625  sum 419430.400390625  diff          0 relative diff          0 runtime 0.002504   OpenMP sum with bit truncation
+  accurate sum 419430.4004194304 sum 419430.4004194305 diff  5.821e-11 relative diff  1.388e-16 runtime 0.004124   OpenMP sum with double double kahan sum accumulator
+  accurate sum 419430.4004194303 sum 419430.4004194303 diff          0 relative diff          0 runtime 0.004233   OpenMP sum with double double kahan sum accumulator with bit truncation
+
+SETTINGS INFO -- ncells 16777216 log 24 ndigits 7 ndigitsld 4 nbits 27 nbitsld 14
+Initializing mesh with Leblanc problem, high values first
+  accurate sum 838860.8008388608 sum 838860.800853056  diff   1.42e-05 relative diff  1.692e-11 runtime 0.014383   Serial sum
+  accurate sum 838860.8008388608 sum 838860.800924862  diff    8.6e-05 relative diff  1.025e-10 runtime 0.009197   Serial sum (OpenMP SIMD pragma)
+  accurate sum 838860.801        sum 838860.801        diff          0 relative diff          0 runtime 0.014351   Serial sum with digit truncation
+  accurate sum 838860.796875     sum 838860.796875     diff          0 relative diff          0 runtime 0.014402   Serial sum with bit truncation
+  accurate sum 838860.8008388608 sum 838860.800838807  diff  -5.38e-08 relative diff -6.413e-14 runtime 0.022958   Serial sum with long double accumulator
+  accurate sum 838860.800839     sum 838860.800839     diff          0 relative diff          0 runtime 0.023097   Serial sum with long double accumulator with ndigit truncation
+  accurate sum 838860.8008384705 sum 838860.8008384705 diff          0 relative diff          0 runtime 0.025889   Serial sum with long double accumulator with bit truncation
+  accurate sum 838860.8008388608 sum 838860.8008388608 diff          0 relative diff          0 runtime 0.049736   Serial sum with double double kahan sum accumulator
+  accurate sum 838860.8008388608 sum 838860.8008388608 diff          0 relative diff          0 runtime 0.011948   Intel Vectorized sum with double double kahan sum accumulator
+  accurate sum 838860.8008388608 sum 838860.8008388608 diff          0 relative diff          0 runtime 0.012055   GCC Extensions Vectorized sum with double double kahan sum accumulator
+  accurate sum 838860.8008388608 sum 838860.8008388607 diff -1.164e-10 relative diff -1.388e-16 runtime 0.013369   8 wide GCC vector extensions Kahan sum
+  accurate sum 838860.8008388608 sum 838860.8008388608 diff          0 relative diff          0 runtime 0.081939   Serial sum with double double knuth sum accumulator
+  accurate sum 838860.8008388608 sum 838860.8008388608 diff          0 relative diff          0 runtime 0.023372   Intel Vectorized sum with double double knuth sum accumulator
+  accurate sum 838860.8008388608 sum 838860.8008388608 diff          0 relative diff          0 runtime 0.025516   GCC Extensions Vectorized sum with double double knuth sum accumulator
+  accurate sum 838860.8008388608 sum 838860.8008388608 diff          0 relative diff          0 runtime 0.063130   Pair-wise sum
+
+  accurate sum 838860.8008388608        sum 838860.8008388608465661  diff 4.6566128761335e-11  relative diff 5.5511151212179e-17  runtime 0.446171   Serial sum with quad double accumulator
+  accurate sum 838860.8008388608        sum 838860.8008388608        diff -3.8768739581042e-23 relative diff -4.6215938976137e-29 runtime 0.241266   Serial sum with quad double accumulator and quad terms
+
+  accurate sum 838860.8008388608 sum 838860.8008697373 diff  3.088e-05 relative diff  3.681e-11 runtime 0.005349   OpenMP sum
+  accurate sum 838860.80078125   sum 838860.80078125   diff          0 relative diff          0 runtime 0.004560   OpenMP sum with bit truncation
+  accurate sum 838860.8008388608 sum 838860.8008388609 diff  1.164e-10 relative diff  1.388e-16 runtime 0.007099   OpenMP sum with double double kahan sum accumulator
+  accurate sum 838860.8008388607 sum 838860.8008388607 diff          0 relative diff          0 runtime 0.007243   OpenMP sum with double double kahan sum accumulator with bit truncation
+

@@ -1,0 +1,6 @@
+Method,Error,Run time (s)
+Double,1.692e-11,0.014383
+Long double,-6.413e-14,0.022958
+Pairwise,0,0.063130
+Kahan,0,0.049736
+Knuth,0,0.081939
