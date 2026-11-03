@@ -1,9 +1,9 @@
-Lab 05: Parallel Global Sum
+## Lab 05: Parallel Global Sum
 What I did
 
 I used globalsums.c from the GlobalSums repo. It sums an array where half the numbers are 0.1 and half are tiny (about 1e-10), so the tiny ones get lost. I compared 5 methods (double, long double, pairwise, Kahan, Knuth) against an accurate reference sum.
 
-How I ran it
+## How I ran it
 cd GlobalSums
 mkdir build && cd build
 cmake .. -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_BUILD_TYPE=Release \
@@ -26,7 +26,7 @@ Knuth	0	0	0.081939
 
 This is one run, so times can change a bit. Error 0 only means it matched the reference here.
 
-Google Sheet: https://docs.google.com/spreadsheets/d/18eTI33TrntqgW036IPai2YIgMvrJeYPuBnU2B1cquQM/edit?usp=sharing
+## Google Sheet: https://docs.google.com/spreadsheets/d/18eTI33TrntqgW036IPai2YIgMvrJeYPuBnU2B1cquQM/edit?usp=sharing
 
 terminal output
 Why some are more accurate
