@@ -4,7 +4,7 @@ Quick README for Example_03 testing out vectorization improvements on timestep.c
 
 ## Benchmark Results
 
-Tested on AMD Ryzen 5 3400G with 256-bit vector width (`-mprefer-vector-width=256`) in WSL2.
+Tested on AMD Ryzen 5 3400G with 256-bit vector width 
 
 - run_base - timestep.c - **0.7146s** - No 
 - run_opt1 - timestep_opt1.c - **0.7298s** - Partial (32-byte vectors, sqrt` missed)
