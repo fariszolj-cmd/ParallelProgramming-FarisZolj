@@ -25,5 +25,5 @@ Tested on AMD Ryzen 5 3400G with 256-bit vector width
 
 - **Fully vectorized?** Only run_opt3_fast managed to fully vectorize without issues
 - **Vector length used?** 256-bit / 32-byte AVX2 vectors.
-- **Which run was best?** `run_opt2` was the fastest at 0.6433s.
+- **Which run was best?** run_opt2 was the fastest at 0.6433s.
 
