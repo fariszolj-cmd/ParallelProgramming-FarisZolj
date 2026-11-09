@@ -20,7 +20,7 @@ Tested on AMD Ryzen 5 3400G with 256-bit vector width
 
 * **Base code (timestep.c):** Didn't vectorize at all GCC threw unsupported control flow 
 * **opt1 & opt2:** Got partial SIMD using 32-byte (256-bit AVX2) vectors once the if check was removed. sqrt() still blocked full loop vectorization but opt2 ended up with the fastest run time.
-* **`opt3_fast`:** Adding -fno-trapping-math and -fno-math-errno finally vectorized the whole thing. It tells GCC sqrt() won't mess with `errno`, so it used actual AVX2 `VSQRTD` vector instructions.
+* **opt3_fast:** Adding -fno-trapping-math and -fno-math-errno finally vectorized the whole thing. It tells GCC sqrt() won't mess with errno  so it used actual AVX2 VSQRTDvector instructions.
 
 
 - **Fully vectorized?** Only run_opt3_fast managed to fully vectorize without issues
