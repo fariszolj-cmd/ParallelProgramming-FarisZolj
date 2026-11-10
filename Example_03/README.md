@@ -1,6 +1,5 @@
 # Example_03 - Vectorization Notes
 
-Quick README for Example_03 testing out vectorization improvements on timestep.c.
 
 ## Benchmark Results
 
