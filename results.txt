@@ -1,0 +1,45 @@
+CPU: AMD Ryzen 5 3400G with Radeon Vega Graphics
+Hardware threads (nproc): 8
+OMP_NUM_THREADS: <unset, OpenMP default>
+
+===== Running stencil_opt2 =====
+Running with 8 thread(s)
+Iter 0
+Iter 1000
+Iter 2000
+Iter 3000
+Iter 4000
+Iter 5000
+Iter 6000
+Iter 7000
+Iter 8000
+Iter 9000
+Timing is init 0.021693 flush 60.172157 stencil 47.162040 total 107.363933
+
+===== Running stencil_opt4 =====
+Running with 8 thread(s)
+Iter 0
+Iter 1000
+Iter 2000
+Iter 3000
+Iter 4000
+Iter 5000
+Iter 6000
+Iter 7000
+Iter 8000
+Iter 9000
+Timing is init 0.023917 flush 52.680366 stencil 51.053897 total 103.782328
+
+===== Running stencil_opt6 =====
+Running with 8 thread(s)
+Iter 0
+Iter 1000
+Iter 2000
+Iter 3000
+Iter 4000
+Iter 5000
+Iter 6000
+Iter 7000
+Iter 8000
+Iter 9000
+Timing is init 0.010594 flush 54.023410 stencil 47.271592 total 104.760580
