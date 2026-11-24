@@ -1,22 +1,14 @@
+default:	PartialSum
+all:	PartialSum
 
-CC = gcc
-CFLAGS = -Wall -Wextra -Wpedantic -std=c11 -g
-TARGET = program
-SRC = main.c
-ARGS = 5
+%.o: %.c
+	mpicc -c $^
 
-.PHONY: all run valgrind clean
+PartialSum: PartialSum.o timer.o
+	mpicc $^ -o PartialSum
 
-all: $(TARGET)
-
-$(TARGET): $(SRC)
-	$(CC) $(CFLAGS) $(SRC) -o $(TARGET)
-
-run: $(TARGET)
-	./$(TARGET) $(ARGS)
-
-valgrind: $(TARGET)
-	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./$(TARGET) $(ARGS)
+run:
+	mpirun -n 4 ./PartialSum
 
 clean:
-	rm -f $(TARGET)
+	rm -f PartialSum PartialSum.o timer.o
